@@ -1,0 +1,16 @@
+
+<h5>Nombre de la carrera</h5>
+
+
+<form >
+    <div class="mb-3" >
+      <label class="form-label">Insertar carrera</label>
+       <input class="form-control" [(ngModel)]="carreras.nombres" type="text" name="" id=""> 
+    </div>
+    <div class="mb-3" >
+      <button (click)="crearCarrera()" class="btn btn-primary">Crear</button> 
+       <button routerLink="/listarcarreras" class="btn btn-danger">Cancelar</button> 
+    </div>
+    
+   
+</form>

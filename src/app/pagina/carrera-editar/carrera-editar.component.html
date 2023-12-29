@@ -1,0 +1,15 @@
+
+
+
+<h5>Editar Carrera</h5>
+<form [formGroup]="formCarreras">
+    <div>
+       <input class="form-control" formControlName="nombres" type="text" name="" id=""> 
+    </div>
+    <div>
+      <button (click)="actualizarCarrera()" class="btn btn-primary">Editar carrera</button> 
+       <button routerLink="/carrera" class="btn btn-danger">Cancelar</button> 
+    </div>
+    
+   
+</form>

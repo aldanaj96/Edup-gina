@@ -1,0 +1,50 @@
+
+<div class="container ">
+
+   <div class="row">
+      <h2>Lista de carreras </h2>
+   </div>
+
+
+<div class="row mb-4 ">
+   <input class="form-control" type="text" placeholder="Buscar carrera" aria-label="default input example">
+
+</div>
+
+
+<div class="row">
+   <div #tabla>
+      <table class="table table-bordered border-primary" style="width:100%">
+         <!--Encabezado -->
+          <thead> 
+            <tr>
+             <th>ID</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+           </tr>
+          </thead>
+       
+          <tbody class="table-group-divider ">
+             <!-- -->
+            <tr *ngFor='let carreras of carreras'>
+               <td>{{carreras.idcarreras}}</td>
+               <td>{{carreras.nombres}}</td>
+               <td  id="tercer">
+                 <button routerLink='/carreraed' class="btn btn-secondary">Editar</button>
+                 <button (click)="eliminarCarrera(carreras)" class="btn btn-danger" >Eliminar</button>
+                </td>
+            </tr>
+
+            
+       
+          </tbody>
+       
+       </table>
+   </div>
+
+</div> 
+
+<button (click)="generarPDF()" type="button" id="desc">Descargar PDF</button>
+
+</div>
+

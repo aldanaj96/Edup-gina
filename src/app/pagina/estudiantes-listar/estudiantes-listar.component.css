@@ -1,0 +1,28 @@
+
+.container{
+  background-color: aquamarine;
+}
+
+
+
+#act{
+  text-align: center;
+}
+
+table,th,td{
+    border: 1px solid black;
+    
+    border-collapse: collapse;
+  
+}
+
+td { 
+    background-color: #eec9b0;    
+    
+  }
+
+  th{
+    background-color: #c9d1d1;
+    text-align: center;
+}
+
