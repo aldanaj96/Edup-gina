@@ -30,7 +30,7 @@
                <td>{{carreras.idcarreras}}</td>
                <td>{{carreras.nombres}}</td>
                <td  id="tercer">
-                 <button routerLink='/carreraed' class="btn btn-secondary">Editar</button>
+                 <button routerLink='/carreraed/ {{carreras.idcarreras}} ' class="btn btn-secondary">Editar</button>
                  <button (click)="eliminarCarrera(carreras)" class="btn btn-danger" >Eliminar</button>
                 </td>
             </tr>

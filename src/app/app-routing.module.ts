@@ -21,8 +21,8 @@ const routes: Routes = [
   {path:'getest',component:EstudiantesListarComponent},
   {path:'postest',component:EstudiantesCargarComponent},
   {path:'carrerapost',component:CarreraCargarComponent},
-  {path:'carreraed',component:CarreraEditarComponent},
-  {path:'editarest',component:EstudiantesEditarComponent},
+  {path:'carreraed/:id',component:CarreraEditarComponent},
+  {path:'editarest/:id',component:EstudiantesEditarComponent},
   {path:'**',component: InicioComponent}
 ];
 
