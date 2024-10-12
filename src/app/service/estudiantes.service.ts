@@ -34,7 +34,7 @@ export class EstudiantesService {
     }
    
      //Método para actualizar estudiantes
-     updateEstudiantes({ id, nuevoNom, nuevoAp, nuevoDNI, nuevoTel, nuevoEm }: { id: number; nuevoNom: string; nuevoAp: string; nuevoDNI: number; nuevoTel: number; nuevoEm: string; }): Observable<any> {
+     updateEstudiantes(  id: any, nuevoNom: any, nuevoAp: any, nuevoDNI: any, nuevoTel: any, nuevoEm: any ): Observable<any> {
      return this.http.put(`${this.apiEstURL}`,{idestudiantes:id,nombre:nuevoNom,apellido:nuevoAp,dni:nuevoDNI,telefono:nuevoTel,email:nuevoEm});
   }
 

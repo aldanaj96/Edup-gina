@@ -66,11 +66,9 @@ export class EstudiantesEditarComponent implements OnInit {
     const nuevoTel=this.formEstudiantes.get('telefono')?.value;
     const nuevoEm=this.formEstudiantes.get('email')?.value;
 
-    this.estudiantesService.updateEstudiantes(nuevoNom)
-    this.estudiantesService.updateEstudiantes(nuevoAp)
-    this.estudiantesService.updateEstudiantes(nuevoDNI)
-    this.estudiantesService.updateEstudiantes(nuevoTel)
-    this.estudiantesService.updateEstudiantes(nuevoEm)
+    this.estudiantesService.updateEstudiantes(idestudiantes,nuevoNom, nuevoAp, nuevoDNI, nuevoTel,nuevoEm)
+  
+  
 
     .subscribe(
       respuesta => {

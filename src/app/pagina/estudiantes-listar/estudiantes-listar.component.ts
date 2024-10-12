@@ -35,7 +35,7 @@ constructor(private estudiantesservice:EstudiantesService,
 
   eliminarEstudiantes(estudiantes:any):void{
     if(confirm("¿Está seguro que desea eliminar ** "+estudiantes.nombre+"?")){
-       this.estudiantesservice.deleteEstudiantes(estudiantes.nombre).subscribe(
+       this.estudiantesservice.deleteEstudiantes(estudiantes.idestudiantes).subscribe(
          (data) => {
           this.mostrarEstudiantes();
          },
